@@ -9,11 +9,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
   <meta name="render" content="webkit">
   <title>404 - ZHUYE.XYZ</title>
-  <link rel="stylesheet" type="text/css" charset="utf-8" href="https://cdn.jsdelivr.net/gh/bearduncle520/cdn/css/normalize/801/normalize.css">
-  <link rel="icon" href="favicon.png" type="image/x-icon">
-  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" charset="utf-8" href="https://cdn.jsdelivr.net/gh/bucdn/cdn@latest/css/normalize/801/normalize.css">
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/bucdn/cdn@latest/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/bucdn/cdn@latest/favicon.ico" type="image/x-icon">
   <meta http-equiv="refresh" content="10;url=https://zhuye.xyz/">
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/bearduncle520/cdn/js/bdtj-zhuye.js"></script>
   <style type="text/css">
     html {
       font-size: 62.5%
@@ -76,26 +75,28 @@
 <body>
   <center>
     <div class="cuo">
-      <img src="https://s1.ax1x.com/2020/09/04/wF8ZvD.png?/images/404.png">
+      <img src="https://cdn.jsdelivr.net/gh/bucdn/cdn@latest/images/404.png?/images/404.png">
     </div>
     <div class="text">
       <p>
         The webpage you are looking for is not here!
       </p>
       <br>
-      <p>页面将在 <b><span id="mes">5</span></b> 秒后返回首页</p>
+      <p>页面将在 <b><span id="mes">10</span></b> 秒后返回首页</p>
     </div>
     <div class="back">
-      <a href="https://zhuye.xyz/"><img src="https://s1.ax1x.com/2020/09/04/wF8VgO.png?/images/goback.png"></a>
+      <a href="https://zhuye.xyz/"><img src="https://cdn.jsdelivr.net/gh/bucdn/cdn@latest/images/goback.png?/images/goback.png"></a>
     </div>
   </center>
 
 </body>
 
+<!--百度统计-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/bucdn/cdn@latest/js/bdtj-cdn.js"></script>
 
 <!--5秒后跳转到主页-->
 <script language="javascript" type="text/javascript">
-  var i = 5;
+  var i = 10;
   var intervalid;
   intervalid = setInterval("fun()", 1000);
 
@@ -106,57 +107,6 @@
     }
     document.getElementById("mes").innerHTML = i;
     i--;
-  }
-</script>
-
-<!--无关键字跳转推荐网站js-->
-<script>
-  window.onload = function() {
-    var searchCheck = document.getElementById("searchCheck");
-    searchCheck.addEventListener("submit", function(event) {
-      var wordCheck = document.getElementsByClassName("textb")[0];
-
-      if (wordCheck.value.length <= 0) {
-        window.open("https://zhuye.xyz/"); //推荐网站链接提交
-        event.preventDefault()
-        return false;
-      }
-
-    });
-  }
-</script>
-<!--屏蔽F12-->
-<script>
-  document.oncontextmenu = function(event) {
-    if (window.event) {
-      event = window.event;
-    }
-    try {
-      var the = event.srcElement;
-      if (!((the.tagName == "INPUT" && the.type.toLowerCase() == "text") || the.tagName == "TEXTAREA")) {
-        return false;
-      }
-      return true;
-    } catch (e) {
-      return false;
-    }
-  }
-</script>
-<script>
-  document.onkeydown = function() {
-
-    if (window.event && window.event.keyCode == 123) {
-      alert("Hi，欢迎访问简洁主页：https://zhuye.xyz/");
-      event.keyCode = 0;
-      event.returnValue = false;
-    }
-    if (window.event && window.event.keyCode == 13) {
-      window.event.keyCode = 505;
-    }
-    if (window.event && window.event.keyCode == 8) {
-      alert(str + "\n请使用Del键进行字符的删除操作！");
-      window.event.returnValue = false;
-    }
   }
 </script>
 
