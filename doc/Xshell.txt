@@ -1,3 +1,4 @@
+# Xshell Shield Start
 127.0.0.1 www.makeding.com
 127.0.0.1 makeding.com
 127.0.0.1 vm.makeding.com
@@ -100,3 +101,6 @@
 127.0.0.1 mairuan.cn
 127.0.0.1 mairuan.net
 127.0.0.1 mairuan.com.cn
+# Update time: 2021-11-03
+# Update url: https://cdn.zhuye.xyz/doc/Xshell.txt
+# Xshell Shield End
