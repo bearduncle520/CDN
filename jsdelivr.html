@@ -6,8 +6,8 @@
     <title>
       GitHub 开启 jsDelivr 加速的方法 - ZHUYE.XYZ
     </title>
-    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/bucdn/cdn@latest/favicon.ico"></link>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/bucdn/cdn@latest/css/normalize/801/normalize.css">
+    <link rel="shortcut icon" href="https://fastly.jsdelivr.net/gh/bucdn/cdn@latest/favicon.ico"></link>
+    <link rel="stylesheet" type="text/css" href="https://fastly.jsdelivr.net/gh/bucdn/cdn@latest/css/normalize/801/normalize.css">
     </meta>
     <style type="text/css">
     body{background: #efefef;}
@@ -32,20 +32,20 @@
         <div class="left">
           <p><b>1、源码上传 GitHub 仓库</b></p>
           <p><b>2、链接按如下格式修改</b></p>
-          <p>https://cdn.jsdelivr.net/gh/用户名/仓库名/仓库路径/文件名</p>
-          <p>https://cdn.jsdelivr.net/gh/用户名/仓库名@版本号/仓库路径/文件名</p>
-          <p>https://cdn.jsdelivr.net/gh/用户名/仓库名@latest/仓库路径/文件名</p>
-          <p>https://cdn.jsdelivr.net/gh/bucdn/cdn@latest/css/normalize/801/normalize.css</p>
+          <p>https://fastly.jsdelivr.net/gh/用户名/仓库名/仓库路径/文件名</p>
+          <p>https://fastly.jsdelivr.net/gh/用户名/仓库名@版本号/仓库路径/文件名</p>
+          <p>https://fastly.jsdelivr.net/gh/用户名/仓库名@latest/仓库路径/文件名</p>
+          <p>https://fastly.jsdelivr.net/gh/bucdn/cdn@latest/css/normalize/801/normalize.css</p>
           <p><b>3、获取目录列表</b></p>
-          <p>https://cdn.jsdelivr.net/gh/用户名/仓库名@版本号/</p>
-          <p>https://cdn.jsdelivr.net/gh/用户名/仓库名@版本号/dist/</p>
-          <p>https://cdn.jsdelivr.net/gh/bucdn/cdn@latest/</p>
+          <p>https://fastly.jsdelivr.net/gh/用户名/仓库名@版本号/</p>
+          <p>https://fastly.jsdelivr.net/gh/用户名/仓库名@版本号/dist/</p>
+          <p>https://fastly.jsdelivr.net/gh/bucdn/cdn@latest/</p>
           <p><b>4、清理缓存</b></p>
-          <p>将引用链接里的 "<b>cdn</b>" 改成 "<b>purge</b>"</p>
+          <p>将引用链接里的 "<b>fastly</b>" 改成 "<b>purge</b>"</p>
           <p>https://<b>purge</b>.jsdelivr.net/gh/用户名/仓库名@latest/仓库路径/文件名</p>
           <p>https://<b>purge</b>.jsdelivr.net/gh/bucdn/cdn@latest/css/normalize/801/normalize.css</p>
           <p><b>5、查看 CDN 上的 tags 和 versions</b></p>
-          <p>将引用链接 "<b>cdn.jsdelivr.net/gh</b>" 改成 "<b>data.jsdelivr.com/v1/package/gh</b>"</p>
+          <p>将引用链接 "<b>fastly.jsdelivr.net/gh</b>" 改成 "<b>data.jsdelivr.com/v1/package/gh</b>"</p>
           <p>https://<b>data.jsdelivr.com/v1/package/gh</b>/bucdn/cdn@latest/</p>
         </div>
       </div>
@@ -63,8 +63,8 @@
   </foot>
 
 <!--TIME-->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/bucdn/cdn@latest/js/timeyear.js"></script>
+<script type="text/javascript" src="https://fastly.jsdelivr.net/gh/bucdn/cdn@latest/js/timeyear.js"></script>
 <!--百度统计-->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/bucdn/cdn@latest/js/bdtj-cdn.js"></script>
+<script type="text/javascript" src="https://fastly.jsdelivr.net/gh/bucdn/cdn@latest/js/bdtj-cdn.js"></script>
 
 </html>
